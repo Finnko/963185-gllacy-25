@@ -437,33 +437,38 @@
         Оформить заказ
     </a>
 </div>
-<form action="https://echo.htmlacademy.ru" method="post" class="callback">
-    <fieldset>
-        <legend class="callback-title">
-            Мы обязательно вам ответим!
-        </legend>
-        <a href="#" class="callback-close">
-            <img src="img/%20x-big.svg" alt="Кнопка закрыть окно">
-        </a>
-        <div>
-            <label>
-                <input type="text" name="name" class="callback-input" placeholder="Как вас зовут?">
-            </label>
-        </div>
-        <div>
-            <label>
-                <input type="email" name="e-mail" class="callback-input" placeholder="Ваша почта для ответа?">
-            </label>
-        </div>
-        <div>
-            <label>
-                <textarea name="message" class="callback-textarea"></textarea>
-            </label>
-        </div>
-    </fieldset>
-    <button class="callback__btn btn" type="submit">
-        Отправить
-    </button>
-</form>
+<section class="callback-form">
+    <h2 class="visually-hidden">
+        Форма обратной связи
+    </h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="callback">
+        <fieldset>
+            <legend class="callback-title">
+                Мы обязательно вам ответим!
+            </legend>
+            <a href="#" class="callback-close">
+                <img src="img/%20x-big.svg" alt="Кнопка закрыть окно">
+            </a>
+            <div>
+                <label>
+                    <input type="text" name="name" class="callback-input" placeholder="Как вас зовут?">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="email" name="e-mail" class="callback-input" placeholder="Ваша почта для ответа?">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <textarea name="message" class="callback-textarea"></textarea>
+                </label>
+            </div>
+        </fieldset>
+        <button class="callback__btn btn" type="submit">
+            Отправить
+        </button>
+    </form>
+</section>
 </body>
 </html>
