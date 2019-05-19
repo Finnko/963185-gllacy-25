@@ -58,15 +58,63 @@
                 </li>
             </ul>
         </nav>
-        <a href="#" class="header__search search">
-            <img src="img/search.svg" alt="Иконка поиска">
-        </a>
+        <ul class="header__search search">
+            <li class="search">
+                <a href="#" class="search__link">
+                    <img src="img/search.svg" alt="Иконка поиска">
+                </a>
+            </li>
+            <li class="search__item">
+                <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
+                    <div>
+                        <label>
+                            <input type="text" name="search" class="search-input" placeholder="Что ищем?">
+                        </label>
+                    </div>
+                    <!--Не уверен что правильно-->
+                    <button class="visually-hidden">
+                        Искать
+                    </button>
+                </form>
+            </li>
+        </ul>
         <ul class="header__user-nav user-navigation">
             <li class="user-navigation__item">
                 <a href="#" class="user-navigation__link">
                     <img src="img/login.svg" alt="Иконка входа">
                     Вход
                 </a>
+            </li>
+            <li class="user-navigation__item">
+                <form action="https://echo.htmlacademy.ru" method="post" class="user-navigation__form login">
+                    <fieldset>
+                        <div>
+                            <label>
+                                <input type="email" name="e-mail" class="login-input" placeholder="Электронная почта">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="password" name="password" class="login-input" placeholder="Пароль">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="login__btn btn">
+                        Войти
+                    </button>
+                    <ul class="login__list">
+                        <li class="login__item">
+                            <a href="#" class="login__link">
+                                Забыли пароль?
+                            </a>
+                        </li>
+                        <li class="login__item">
+                            <a href="#" class="login__link">
+                                Новая регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </form>
             </li>
         </ul>
         <a href="#" class="header__cart cart">
@@ -286,22 +334,22 @@
         <ul class="footer__social social">
             <li class="social__item">
                 <a href="http://twitter.com/id1" class="social__link" target="_blank">
-                    <img src="img/twitter.svg" alt="Иконка Твиттера">
+                    <img src="img/twitter.svg" alt="Ссылка на твиттер магазина Глейси">
                 </a>
             </li>
             <li class="social__item">
                 <a href="http://instagram.com/id1" class="social__link" target="_blank">
-                    <img src="img/insta.svg" alt="Иконка Инстаграмм">
+                    <img src="img/insta.svg" alt="Ссылка на инстаграмм магазина Глейси">
                 </a>
             </li>
             <li class="social__item">
                 <a href="http://facebook.com/id1" class="social__link" target="_blank">
-                    <img src="img/facebook.svg" alt="Иконка Фейсбук">
+                    <img src="img/facebook.svg" alt="Ссылка на фейсбук магазина Глейси">
                 </a>
             </li>
             <li class="social__item">
                 <a href="http://vk.com/id1" class="social__link" target="_blank">
-                    <img src="img/vk.svg" alt="Иконка Вконтакте">
+                    <img src="img/vk.svg" alt="Ссылка на вконтакте магазина Глейси">
                 </a>
             </li>
         </ul>
@@ -328,7 +376,7 @@
             </li>
         </ul>
         <div class="footer__copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <a>
                 <img src="img/htmlacademy-logo.svg" width="108" height="38" alt="Логотип HTML Academy">
             </a>
             <p class="footer__copyright-text">
@@ -337,6 +385,85 @@
         </div>
     </footer>
 </div>
-<!--Здесь будет разметка попапов-->
+<div class="cart">
+    <ul class="cart__list">
+        <li class="cart__item">
+            <a href="#">
+                <img src="img/%20x-big.svg" width="10" height="10" alt="Убрать товар из корзины">
+            </a>
+            <figure class="cart__desc">
+                <img src="img/cart-item01.png" class="cart__img" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                <figcaption>
+                    Пломбир с апельсиновым джемом
+                </figcaption>
+            </figure>
+            <p class="cart__text">
+                1,5 кг х
+                <span>
+                    200 руб.
+                </span>
+            </p>
+            <span class="cart__subtotal">
+                300 руб.
+            </span>
+        </li>
+        <li class="cart__item">
+            <a href="#">
+                <img src="img/%20x-big.svg" width="10" height="10" alt="Убрать товар из корзины">
+            </a>
+            <figure class="cart__desc">
+                <img src="img/cart-item01.png" class="cart__img" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                <figcaption>
+                    Клубничный пломбир с присыпкой из белого шоколада
+                </figcaption>
+            </figure>
+            <p class="cart__text">
+                1,5 кг х
+                <span>
+                    300 руб.
+                </span>
+            </p>
+            <span class="cart__subtotal">
+                450 руб.
+            </span>
+        </li>
+    </ul>
+    <p class="cart__total">
+        <b>
+            Итого: 750 руб.
+        </b>
+    </p>
+    <a href="#" class="cart__btn btn">
+        Оформить заказ
+    </a>
+</div>
+<form action="https://echo.htmlacademy.ru" method="post" class="callback">
+    <fieldset>
+        <legend class="callback-title">
+            Мы обязательно вам ответим!
+        </legend>
+        <a href="#" class="callback-close">
+            <img src="img/%20x-big.svg" alt="Кнопка закрыть окно">
+        </a>
+        <div>
+            <label>
+                <input type="text" name="name" class="callback-input" placeholder="Как вас зовут?">
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="email" name="e-mail" class="callback-input" placeholder="Ваша почта для ответа?">
+            </label>
+        </div>
+        <div>
+            <label>
+                <textarea name="message" class="callback-textarea"></textarea>
+            </label>
+        </div>
+    </fieldset>
+    <button class="callback__btn btn" type="submit">
+        Отправить
+    </button>
+</form>
 </body>
 </html>
