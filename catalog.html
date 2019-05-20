@@ -333,23 +333,23 @@
     <footer class="footer">
         <ul class="footer__social social">
             <li class="social__item">
-                <a href="http://twitter.com/id1" class="social__link" target="_blank">
-                    <img src="img/twitter.svg" alt="Ссылка на твиттер магазина Глейси">
+                <a href="http://twitter.com/id1" class="social__link" target="_blank" aria-label="Ссылка на твиттер магазина Глейси">
+                    <img src="img/twitter.svg" alt="">
                 </a>
             </li>
             <li class="social__item">
-                <a href="http://instagram.com/id1" class="social__link" target="_blank">
-                    <img src="img/insta.svg" alt="Ссылка на инстаграмм магазина Глейси">
+                <a href="http://instagram.com/id1" class="social__link" target="_blank" aria-label="Ссылка на инстаграмм магазина Глейси">
+                    <img src="img/insta.svg" alt="">
                 </a>
             </li>
             <li class="social__item">
-                <a href="http://facebook.com/id1" class="social__link" target="_blank">
-                    <img src="img/facebook.svg" alt="Ссылка на фейсбук магазина Глейси">
+                <a href="http://facebook.com/id1" class="social__link" target="_blank" aria-label="Ссылка на фейсбук магазина Глейси">
+                    <img src="img/facebook.svg" alt="">
                 </a>
             </li>
             <li class="social__item">
-                <a href="http://vk.com/id1" class="social__link" target="_blank">
-                    <img src="img/vk.svg" alt="Ссылка на вконтакте магазина Глейси">
+                <a href="http://vk.com/id1" class="social__link" target="_blank" aria-label="Ссылка на вконтакте магазина Глейси">
+                    <img src="img/vk.svg" alt="">
                 </a>
             </li>
         </ul>
@@ -385,86 +385,81 @@
         </div>
     </footer>
 </div>
-<div class="cart">
-    <ul class="cart__list">
-        <li class="cart__item">
-            <a href="#">
-                <img src="img/%20x-big.svg" width="10" height="10" alt="Убрать товар из корзины">
-            </a>
-            <figure class="cart__desc">
-                <img src="img/cart-item01.png" class="cart__img" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                <figcaption>
+<div class="cart-box">
+    <form action="https://echo.htmlacademy.ru" method="post" class="cart">
+        <table class="cart__table">
+            <tr class="cart__row">
+                <td class="cart__col">
+                    <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
+                        <img src="img/%20x-big.svg" width="10" height="10" alt="">
+                    </button>
+                </td>
+                <td class="cart__col">
+                    <img src="img/cart-item01.png" class="cart__img" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                </td>
+                <td class="cart__col">
                     Пломбир с апельсиновым джемом
-                </figcaption>
-            </figure>
-            <p class="cart__text">
-                1,5 кг х
-                <span>
+                </td>
+                <td class="cart__col">
+                <span class="cart__text">
+                    1,5 кг х
+                </span>
+                    <span class="cart__text">
                     200 руб.
                 </span>
-            </p>
-            <span class="cart__subtotal">
-                300 руб.
-            </span>
-        </li>
-        <li class="cart__item">
-            <a href="#">
-                <img src="img/%20x-big.svg" width="10" height="10" alt="Убрать товар из корзины">
-            </a>
-            <figure class="cart__desc">
-                <img src="img/cart-item01.png" class="cart__img" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                <figcaption>
+                </td>
+                <td class="cart__col">
+                    300 руб.
+                </td>
+            </tr>
+            <tr class="cart__row">
+                <td class="cart__col">
+                    <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
+                        <img src="img/%20x-big.svg" width="10" height="10" alt="">
+                    </button>
+                </td>
+                <td class="cart__col">
+                    <img src="img/cart-item02.png" class="cart__img" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                </td>
+                <td class="cart__col">
                     Клубничный пломбир с присыпкой из белого шоколада
-                </figcaption>
-            </figure>
-            <p class="cart__text">
-                1,5 кг х
-                <span>
+                </td>
+                <td class="cart__col">
+                <span class="cart__text">
+                    1,5 кг х
+                </span>
+                    <span class="cart__text">
                     300 руб.
                 </span>
-            </p>
-            <span class="cart__subtotal">
-                450 руб.
-            </span>
-        </li>
-    </ul>
-    <p class="cart__total">
-        <b>
-            Итого: 750 руб.
-        </b>
-    </p>
-    <a href="#" class="cart__btn btn">
-        Оформить заказ
-    </a>
+                </td>
+                <td class="cart__col">
+                    450 руб.
+                </td>
+            </tr>
+            <tr class="cart__row">
+                <td colspan="5">
+                    <b>
+                        Итого: 750 руб.
+                    </b>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" class="cart__btn btn">
+            Оформить заказ
+        </button>
+    </form>
 </div>
 <section class="callback-form">
-    <h2 class="visually-hidden">
-        Форма обратной связи
-    </h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="callback">
-        <fieldset>
-            <legend class="callback-title">
-                Мы обязательно вам ответим!
-            </legend>
-            <a href="#" class="callback-close">
-                <img src="img/%20x-big.svg" alt="Кнопка закрыть окно">
-            </a>
-            <div>
-                <label>
-                    <input type="text" name="name" class="callback-input" aria-label="Введите ваше имя" placeholder="Как вас зовут?">
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input type="email" name="e-mail" class="callback-input" aria-label="Введите ваш email"placeholder="Ваша почта для ответа?">
-                </label>
-            </div>
-            <div>
-                <label>
-                    <textarea name="message" class="callback-textarea" aria-label="Введите ваше сообщение" placeholder="Напишите что-нибудь..."></textarea>
-                </label>
-            </div>
-        </fieldset>
+        <h3 class="callback__title">
+            Мы обязательно вам ответим!
+        </h3>
+        <button type="button" class="callback__close" aria-label="Кнопка закрыть окно">
+            <img src="img/%20x-big.svg" alt="">
+        </button>
+        <input type="text" name="name" class="callback__input" placeholder="Как вас зовут?">
+        <input type="email" name="e-mail" class="callback__input" placeholder="Ваша почта для ответа?">
+        <textarea name="message" class="callback__textarea" placeholder="Напишите что-нибудь..."></textarea>
         <button class="callback__btn btn" type="submit">
             Отправить
         </button>

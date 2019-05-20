@@ -59,26 +59,12 @@
           </ul>
       </nav>
       <ul class="header__search search">
-          <li class="search">
+          <li class="search__item">
               <a href="#" class="search__link">
                   <img src="img/search.svg" alt="Иконка поиска">
               </a>
-          </li>
-          <li class="search__item">
               <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
-                  <div>
-                      <label>
-                          <input type="text" name="search" class="search-input" placeholder="Что ищем?">
-                      </label>
-                  </div>
-                  <!--Не уверен что правильно-->
-                  <button class="visually-hidden">
-                      Поиск по сайту
-                  </button>
-                  <!--или может так?-->
-                  <p class="visually-hidden">
-                      Поиск по сайту
-                  </p>
+                  <input type="text" name="search" class="search-input" placeholder="Что ищем?">
               </form>
           </li>
       </ul>
@@ -88,37 +74,25 @@
                   <img src="img/login.svg" alt="Иконка входа">
                   Вход
               </a>
-          </li>
-          <li class="user-navigation__item">
-              <form action="https://echo.htmlacademy.ru" method="post" class="user-navigation__form login">
-                  <fieldset>
-                      <div>
-                          <label>
-                              <input type="email" name="e-mail" class="login-input" placeholder="Электронная почта">
-                          </label>
-                      </div>
-                      <div>
-                          <label>
-                              <input type="password" name="password" class="login-input" placeholder="Пароль">
-                          </label>
-                      </div>
-                  </fieldset>
-                  <button type="submit" class="login__btn btn">
+              <form action="https://echo.htmlacademy.ru" method="post" class="user-navigation__form login-form">
+                  <input type="email" name="e-mail" class="login-form__input" placeholder="Электронная почта">
+                  <input type="password" name="password" class="login-form__input" placeholder="Пароль">
+                  <button type="submit" class="login-form__btn btn">
                       Войти
                   </button>
-                  <ul class="login__list">
-                      <li class="login__item">
-                          <a href="#" class="login__link">
-                              Забыли пароль?
-                          </a>
-                      </li>
-                      <li class="login__item">
-                          <a href="#" class="login__link">
-                            Новая регистрация
-                          </a>
-                      </li>
-                  </ul>
               </form>
+              <ul class="login-list">
+                  <li class="login-list__item">
+                      <a href="#" class="login__link">
+                          Забыли пароль?
+                      </a>
+                  </li>
+                  <li class="login-list__item">
+                      <a href="#" class="login__link">
+                          Новая регистрация
+                      </a>
+                  </li>
+              </ul>
           </li>
       </ul>
       <a href="#" class="header__cart cart">
@@ -297,23 +271,23 @@
   <footer class="footer">
       <ul class="footer__social social">
           <li class="social__item">
-              <a href="http://twitter.com/id1" class="social__link" target="_blank">
-                  <img src="img/twitter.svg" alt="Ссылка на твиттер магазина Глейси">
+              <a href="http://twitter.com/id1" class="social__link" target="_blank" aria-label="Ссылка на твиттер магазина Глейси">
+                  <img src="img/twitter.svg" alt="">
               </a>
           </li>
           <li class="social__item">
-              <a href="http://instagram.com/id1" class="social__link" target="_blank">
-                  <img src="img/insta.svg" alt="Ссылка на инстаграмм магазина Глейси">
+              <a href="http://instagram.com/id1" class="social__link" target="_blank" aria-label="Ссылка на инстаграмм магазина Глейси">
+                  <img src="img/insta.svg" alt="">
               </a>
           </li>
           <li class="social__item">
-              <a href="http://facebook.com/id1" class="social__link" target="_blank">
-                  <img src="img/facebook.svg" alt="Ссылка на фейсбук магазина Глейси">
+              <a href="http://facebook.com/id1" class="social__link" target="_blank" aria-label="Ссылка на фейсбук магазина Глейси">
+                  <img src="img/facebook.svg" alt="">
               </a>
           </li>
           <li class="social__item">
-              <a href="http://vk.com/id1" class="social__link" target="_blank">
-                  <img src="img/vk.svg" alt="Ссылка на вконтакте магазина Глейси">
+              <a href="http://vk.com/id1" class="social__link" target="_blank" aria-label="Ссылка на вконтакте магазина Глейси">
+                  <img src="img/vk.svg" alt="">
               </a>
           </li>
       </ul>
@@ -350,33 +324,16 @@
   </footer>
 </div>
 <section class="callback-form">
-    <h2 class="visually-hidden">
-        Форма обратной связи
-    </h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="callback">
-      <fieldset>
-          <legend class="callback-title">
-              Мы обязательно вам ответим!
-          </legend>
-          <a href="#" class="callback-close">
-              <img src="img/%20x-big.svg" alt="Кнопка закрыть окно">
-          </a>
-          <div>
-              <label>
-                  <input type="text" name="name" class="callback-input" aria-label="Введите ваше имя" placeholder="Как вас зовут?">
-              </label>
-          </div>
-          <div>
-              <label>
-                  <input type="email" name="e-mail" class="callback-input" aria-label="Введите ваш email"placeholder="Ваша почта для ответа?">
-              </label>
-          </div>
-          <div>
-              <label>
-                  <textarea name="message" class="callback-textarea" aria-label="Введите ваше сообщение" placeholder="Напишите что-нибудь..."></textarea>
-              </label>
-          </div>
-      </fieldset>
+      <h3 class="callback__title">
+          Мы обязательно вам ответим!
+      </h3>
+      <button type="button" class="callback__close" aria-label="Кнопка закрыть окно">
+          <img src="img/%20x-big.svg" alt="">
+      </button>
+      <input type="text" name="name" class="callback__input" placeholder="Как вас зовут?">
+      <input type="email" name="e-mail" class="callback__input" placeholder="Ваша почта для ответа?">
+      <textarea name="message" class="callback__textarea" placeholder="Напишите что-нибудь..."></textarea>
       <button class="callback__btn btn" type="submit">
           Отправить
       </button>
