@@ -83,12 +83,12 @@
               </form>
               <ul class="login-list">
                   <li class="login-list__item">
-                      <a href="#" class="login__link">
+                      <a href="#" class="login-list__link">
                           Забыли пароль?
                       </a>
                   </li>
                   <li class="login-list__item">
-                      <a href="#" class="login__link">
+                      <a href="#" class="login-list__link">
                           Новая регистрация
                       </a>
                   </li>
@@ -238,7 +238,12 @@
               <p class="subscribe__text">
                   Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
-              <!--Здесь будет форма подписки на рассылку-->
+              <form action="https://echo.htmlacademy.ru" method="post" class="subscribe__form">
+                  <input type="email" name="email" class="subscribe__input" placeholder="Электронная почта">
+                  <button type="submit" class="subscribe__btn">
+                      Отправить
+                  </button>
+              </form>
           </div>
       </section>
       <section class="map">
