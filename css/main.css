@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #323232;
+    background-color: #849d8f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 27px;
+}
+
+a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #ffbc9e;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+}
+
+.menu,
+.dropdown,
+.user-navigation,
+.user-login__list,
+.user-help,
+.actions,
+.products,
+.about-company__list,
+.social,
+.info-list {
+    list-style-type: none;
+}
+
+.dropdown,
+.search__form,
+.user-login__box,
+.callback-form,
+.cart__box {
+    display: none;
+}
+
+.btn {
+    font: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    padding: 10px 21px;
+    border: none;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.btn:hover,
+.btn:focus {
+    background-image: linear-gradient(rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0 2px 2px 0 #ac1000;
+    color: #fff;
+}
+
+.btn:active {
+    background-image: linear-gradient(rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0 2px 2px 0 #942718;
+}
+
+.menu__item {
+    line-height: 18px;
+}
+
+.user-navigation__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.header__contacts {
+    text-align: right;
+}
+
+.header__contacts-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.header__contacts-phone {
+    font-size: 22px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.actions {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.actions__title {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.products__item {
+    text-align: center;
+    color: #fff;
+}
+
+.products__price {
+    text-align: left;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.products__price_kg {
+    font-size: 30px;
+}
+
+.about-company__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.about-company__text {
+    font-weight: 400;
+}
+
+.latest-news__text {
+    font-weight: 500;
+}
+
+.latest-news__link {
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+
+.latest-news__link:hover,
+.latest-news__link:active,
+.latest-news__link:focus {
+    color: #e84d37;
+}
+
+.subscribe__input {
+    font: inherit;
+    color: #999999;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.subscribe__text {
+    font-weight: 400;
+    color: #5a5a5a;
+}
+
+.contacts {
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #fff;
+}
+
+.contacts__address,
+.contacts__phone {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.contacts__phone {
+    color: #323232;
+    text-decoration: none;
+}
+
+.contacts__phone:hover,
+.contacts__phone:active,
+.contacts__phone:focus {
+    color: #e84d37;
+}
+
+.info-list__item {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.footer__copyright-text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #fefefe;
+}

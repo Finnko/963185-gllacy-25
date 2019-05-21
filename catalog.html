@@ -5,6 +5,9 @@
     <title>Глейси - Сливочное мороженое</title>
     <meta name="description" content="Глейси - магазин натурального мороженого">
     <meta name="keywords" content="Мороженое">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="container">
@@ -74,25 +77,27 @@
                             <img src="img/login.svg" alt="Иконка входа">
                             Вход
                         </a>
-                        <form action="https://echo.htmlacademy.ru" method="post" class="user-login__form">
-                            <input type="email" name="e-mail" class="user-login__input" placeholder="Электронная почта">
-                            <input type="password" name="password" class="user-login__input" placeholder="Пароль">
-                            <button type="submit" class="user-login__btn btn">
-                                Войти
-                            </button>
-                        </form>
-                        <ul class="user-login__list-help user-help">
-                            <li class="user-help__item">
-                                <a href="#" class="user-help__link">
-                                    Забыли пароль?
-                                </a>
-                            </li>
-                            <li class="user-help__item">
-                                <a href="#" class="user-help__link">
-                                    Новая регистрация
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="user-login__box">
+                            <form action="https://echo.htmlacademy.ru" method="post" class="user-login__form">
+                                <input type="email" name="e-mail" class="user-login__input" placeholder="Электронная почта">
+                                <input type="password" name="password" class="user-login__input" placeholder="Пароль">
+                                <button type="submit" class="user-login__btn btn">
+                                    Войти
+                                </button>
+                            </form>
+                            <ul class="user-login__list-help user-help">
+                                <li class="user-help__item">
+                                    <a href="#" class="user-help__link">
+                                        Забыли пароль?
+                                    </a>
+                                </li>
+                                <li class="user-help__item">
+                                    <a href="#" class="user-help__link">
+                                        Новая регистрация
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </li>
@@ -215,7 +220,7 @@
                         </a>
                     </h3>
                 </li>
-                <li>
+                <li class="products__item">
                     <img src="img/ice-cream02.jpg" class="products__img" width="267" height="267" alt="Сливочное-шоколадное мороженое">
                     <span class="products__price">
                         380 ₽/кг

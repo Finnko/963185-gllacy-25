@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<title>HTML Academy: Глейси</title>
-<meta name="description" content="Глейси - магазин натурального мороженого">
-<meta name="keywords" content="Мороженое">
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <meta name="description" content="Глейси - магазин натурального мороженого">
+    <meta name="keywords" content="Мороженое">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="container">
@@ -74,97 +77,35 @@
                           <img src="img/login.svg" alt="Иконка входа">
                           Вход
                       </a>
-                      <form action="https://echo.htmlacademy.ru" method="post" class="user-login__form">
-                          <input type="email" name="e-mail" class="user-login__input" placeholder="Электронная почта">
-                          <input type="password" name="password" class="user-login__input" placeholder="Пароль">
-                          <button type="submit" class="user-login__btn btn">
-                              Войти
-                          </button>
-                      </form>
-                      <ul class="user-login__list-help user-help">
-                          <li class="user-help__item">
-                              <a href="#" class="user-help__link">
-                                  Забыли пароль?
-                              </a>
-                          </li>
-                          <li class="user-help__item">
-                              <a href="#" class="user-help__link">
-                                  Новая регистрация
-                              </a>
-                          </li>
-                      </ul>
+                     <div class="user-login__box">
+                         <form action="https://echo.htmlacademy.ru" method="post" class="user-login__form">
+                             <input type="email" name="e-mail" class="user-login__input" placeholder="Электронная почта">
+                             <input type="password" name="password" class="user-login__input" placeholder="Пароль">
+                             <button type="submit" class="user-login__btn btn">
+                                 Войти
+                             </button>
+                         </form>
+                         <ul class="user-login__list-help user-help">
+                             <li class="user-help__item">
+                                 <a href="#" class="user-help__link">
+                                     Забыли пароль?
+                                 </a>
+                             </li>
+                             <li class="user-help__item">
+                                 <a href="#" class="user-help__link">
+                                     Новая регистрация
+                                 </a>
+                             </li>
+                         </ul>
+                     </div>
                   </li>
               </ul>
           </li>
           <li class="user-navigation__item cart">
               <a href="#" class="cart__link">
-                  <img src="img/cart-with-goods.svg" alt="Иконка корзины с товарами">
+                  <img src="img/cart-empty.svg" alt="Иконка пустой корзины">
                   Пусто
               </a>
-              <div class="cart__box">
-                  <form action="https://echo.htmlacademy.ru" method="post" class="cart__form">
-                      <table class="cart__table">
-                          <tr class="cart__row">
-                              <td class="cart__col">
-                                  <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
-                                      <img src="img/%20x-big.svg" width="10" height="10" alt="">
-                                  </button>
-                              </td>
-                              <td class="cart__col">
-                                  <img src="img/cart-item01.png" class="cart__img" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                              </td>
-                              <td class="cart__col">
-                                  Пломбир с апельсиновым джемом
-                              </td>
-                              <td class="cart__col">
-                                    <span class="cart__text">
-                                        1,5 кг х
-                                    </span>
-                                  <span class="cart__text">
-                                        200 руб.
-                                    </span>
-                              </td>
-                              <td class="cart__col">
-                                  300 руб.
-                              </td>
-                          </tr>
-                          <tr class="cart__row">
-                              <td class="cart__col">
-                                  <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
-                                      <img src="img/%20x-big.svg" width="10" height="10" alt="">
-                                  </button>
-                              </td>
-                              <td class="cart__col">
-                                  <img src="img/cart-item02.png" class="cart__img" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                              </td>
-                              <td class="cart__col">
-                                  Клубничный пломбир с присыпкой из белого шоколада
-                              </td>
-                              <td class="cart__col">
-                                    <span class="cart__text">
-                                        1,5 кг х
-                                    </span>
-                                  <span class="cart__text">
-                                        300 руб.
-                                    </span>
-                              </td>
-                              <td class="cart__col">
-                                  450 руб.
-                              </td>
-                          </tr>
-                          <tr class="cart__row">
-                              <td colspan="5">
-                                  <b>
-                                      Итого: 750 руб.
-                                  </b>
-                              </td>
-                          </tr>
-                      </table>
-                      <button type="submit" class="cart__btn btn">
-                          Оформить заказ
-                      </button>
-                  </form>
-              </div>
           </li>
       </ul>
       <div class="header__contacts">
@@ -220,19 +161,25 @@
               <li class="products__item">
                   <img src="img/ice-cream01.jpg" class="products__img" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <span class="products__price">
-                310 ₽/кг
-              </span>
+                     310 ₽
+                  </span>
+                  <span class="products__price_kg">
+                      /кг
+                  </span>
                   <h3 class="products__title">
                       <a href="#">
                           Сливочное с апельсиновым джемом и цитрусовой стружкой
                       </a>
                   </h3>
               </li>
-              <li>
+              <li class="products__item">
                   <img src="img/ice-cream02.jpg" class="products__img" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                   <span class="products__price">
-                380 ₽/кг
-              </span>
+                    380 ₽
+                  </span>
+                  <span class="products__price_kg">
+                      /кг
+                  </span>
                   <h3 class="products__title">
                       <a href="#">
                           Сливочно-кофейное с кусочками шоколада
@@ -242,8 +189,11 @@
               <li class="products__item">
                   <img src="img/ice-cream03.jpg" class="products__img" width="267" height="267" alt="Сливочно-клубничное мороженое">
                   <span class="products__price">
-                355 ₽/кг
-              </span>
+                    355 ₽
+                  </span>
+                  <span class="products__price_kg">
+                      /кг
+                  </span>
                   <h3 class="products__title">
                       <a href="#">
                           Сливочно-клубничное с присыпкой из белого шоколада
@@ -253,8 +203,11 @@
               <li class="products__item">
                   <img src="img/ice-cream04.jpg" class="products__img" width="267" height="267" alt="Сливочное крем брюле">
                   <span class="products__price">
-                415 ₽/кг
-              </span>
+                     415 ₽
+                  </span>
+                  <span class="products__price_kg">
+                      /кг
+                  </span>
                   <h3 class="products__title">
                       <a href="#">
                           Сливочное крем-брюле с карамельной подливкой
@@ -308,7 +261,7 @@
               </p>
               <form action="https://echo.htmlacademy.ru" method="post" class="subscribe__form">
                   <input type="email" name="email" class="subscribe__input" placeholder="Электронная почта">
-                  <button type="submit" class="subscribe__btn">
+                  <button type="submit" class="subscribe__btn btn">
                       Отправить
                   </button>
               </form>
