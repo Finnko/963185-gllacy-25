@@ -59,22 +59,12 @@
             </ul>
         </nav>
         <ul class="header__search search">
-            <li class="search">
+            <li class="search__item">
                 <a href="#" class="search__link">
                     <img src="img/search.svg" alt="Иконка поиска">
                 </a>
-            </li>
-            <li class="search__item">
                 <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
-                    <div>
-                        <label>
-                            <input type="text" name="search" class="search-input" placeholder="Что ищем?">
-                        </label>
-                    </div>
-                    <!--Не уверен что правильно-->
-                    <button class="visually-hidden">
-                        Искать
-                    </button>
+                    <input type="text" name="search" class="search-input" placeholder="Что ищем?">
                 </form>
             </li>
         </ul>
@@ -84,40 +74,28 @@
                     <img src="img/login.svg" alt="Иконка входа">
                     Вход
                 </a>
-            </li>
-            <li class="user-navigation__item">
-                <form action="https://echo.htmlacademy.ru" method="post" class="user-navigation__form login">
-                    <fieldset>
-                        <div>
-                            <label>
-                                <input type="email" name="e-mail" class="login-input" placeholder="Электронная почта">
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="password" name="password" class="login-input" placeholder="Пароль">
-                            </label>
-                        </div>
-                    </fieldset>
-                    <button type="submit" class="login__btn btn">
+                <form action="https://echo.htmlacademy.ru" method="post" class="user-navigation__form login-form">
+                    <input type="email" name="e-mail" class="login-form__input" placeholder="Электронная почта">
+                    <input type="password" name="password" class="login-form__input" placeholder="Пароль">
+                    <button type="submit" class="login-form__btn btn">
                         Войти
                     </button>
-                    <ul class="login__list">
-                        <li class="login__item">
-                            <a href="#" class="login__link">
-                                Забыли пароль?
-                            </a>
-                        </li>
-                        <li class="login__item">
-                            <a href="#" class="login__link">
-                                Новая регистрация
-                            </a>
-                        </li>
-                    </ul>
                 </form>
+                <ul class="login-list">
+                    <li class="login-list__item">
+                        <a href="#" class="login-list__link">
+                            Забыли пароль?
+                        </a>
+                    </li>
+                    <li class="login-list__item">
+                        <a href="#" class="login-list__link">
+                            Новая регистрация
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
-        <a href="#" class="header__cart cart">
+        <a href="#" class="header__cart">
             <img src="img/cart-with-goods.svg" alt="Иконка корзины с товарами">
             Пусто
         </a>
@@ -384,70 +362,6 @@
             </p>
         </div>
     </footer>
-</div>
-<div class="cart-box">
-    <form action="https://echo.htmlacademy.ru" method="post" class="cart">
-        <table class="cart__table">
-            <tr class="cart__row">
-                <td class="cart__col">
-                    <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
-                        <img src="img/%20x-big.svg" width="10" height="10" alt="">
-                    </button>
-                </td>
-                <td class="cart__col">
-                    <img src="img/cart-item01.png" class="cart__img" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                </td>
-                <td class="cart__col">
-                    Пломбир с апельсиновым джемом
-                </td>
-                <td class="cart__col">
-                <span class="cart__text">
-                    1,5 кг х
-                </span>
-                    <span class="cart__text">
-                    200 руб.
-                </span>
-                </td>
-                <td class="cart__col">
-                    300 руб.
-                </td>
-            </tr>
-            <tr class="cart__row">
-                <td class="cart__col">
-                    <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
-                        <img src="img/%20x-big.svg" width="10" height="10" alt="">
-                    </button>
-                </td>
-                <td class="cart__col">
-                    <img src="img/cart-item02.png" class="cart__img" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                </td>
-                <td class="cart__col">
-                    Клубничный пломбир с присыпкой из белого шоколада
-                </td>
-                <td class="cart__col">
-                <span class="cart__text">
-                    1,5 кг х
-                </span>
-                    <span class="cart__text">
-                    300 руб.
-                </span>
-                </td>
-                <td class="cart__col">
-                    450 руб.
-                </td>
-            </tr>
-            <tr class="cart__row">
-                <td colspan="5">
-                    <b>
-                        Итого: 750 руб.
-                    </b>
-                </td>
-            </tr>
-        </table>
-        <button type="submit" class="cart__btn btn">
-            Оформить заказ
-        </button>
-    </form>
 </div>
 <section class="callback-form">
     <form action="https://echo.htmlacademy.ru" method="post" class="callback">
