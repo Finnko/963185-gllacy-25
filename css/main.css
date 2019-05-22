@@ -48,7 +48,9 @@ a:focus {
 .products,
 .about-company__list,
 .social,
-.info-list {
+.info-list,
+.breadcrumbs,
+.pagination {
     list-style-type: none;
 }
 
@@ -95,6 +97,11 @@ a:focus {
     line-height: 16px;
 }
 
+.user-login__link,
+.cart__link {
+    text-decoration: none;
+}
+
 .header__contacts {
     text-align: right;
 }
@@ -133,7 +140,7 @@ a:focus {
     line-height: 45px;
 }
 
-.products__price_kg {
+.products__price:last-of-type {
     font-size: 30px;
 }
 
@@ -209,3 +216,75 @@ a:focus {
     line-height: 18px;
     color: #fefefe;
 }
+
+.breadcrumbs__item {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+    content: '»';
+}
+
+.main__title {
+    color: #fff;
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.pagination {
+    text-align: right;
+}
+
+.pagination__item {
+    font-weight: 500;
+}
+
+.pagination__item {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+}
+
+.pagination__link {
+    text-decoration: none;
+}
+
+.pagination__item:hover,
+.pagination__item:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination__item:hover .pagination__link,
+.pagination__item:focus .pagination__link {
+    color: #fff;
+}
+
+.pagination__item_current {
+    background-color: #fff;
+}
+
+.pagination__item_current .pagination__link {
+    color: #000;
+}
+
+.pagination__item_current:hover,
+.pagination__item_current:focus {
+    background-color: #fff;
+}
+
+.pagination__item_current:hover .pagination__link,
+.pagination__item_current:focus .pagination__link {
+    color: #000;
+}
+
+.pagination__link_prev img {
+    transform: scaleX(-1);
+}
+
