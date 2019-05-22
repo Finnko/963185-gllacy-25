@@ -102,6 +102,10 @@ a:focus {
     text-decoration: none;
 }
 
+.header__user-nav {
+    display: flex;
+}
+
 .header__contacts {
     text-align: right;
 }
@@ -116,6 +120,35 @@ a:focus {
     font-size: 22px;
     line-height: 24px;
     text-decoration: none;
+}
+
+.search__link {
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    width: 33px;
+    height: 33px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 50%;
+}
+
+.user-login__link,
+.cart__link {
+    display: block;
+    text-align: center;
+    padding: 6px 15px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.search__link:hover,
+.search__link:focus,
+.user-login__link:hover,
+.user-login__link:focus,
+.cart__link:hover,
+.cart__link:focus {
+    color: #000;
+    background-color: #fff;
 }
 
 .actions {
@@ -240,47 +273,29 @@ a:focus {
 
 .pagination__item {
     font-weight: 500;
-}
-
-.pagination__item {
-    width: 26px;
-    height: 26px;
-    background-color: transparent;
-    border-radius: 50%;
     display: inline-block;
-    text-align: center;
-    line-height: 26px;
+    vertical-align: top;
 }
 
 .pagination__link {
     text-decoration: none;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 26px;
 }
 
-.pagination__item:hover,
-.pagination__item:focus {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.pagination__item:hover .pagination__link,
-.pagination__item:focus .pagination__link {
+.pagination__link:hover,
+.pagination__link:focus {
+    background-color: rgba(255,255,255, 0.2);
     color: #fff;
 }
 
-.pagination__item_current {
-    background-color: #fff;
-}
-
 .pagination__item_current .pagination__link {
-    color: #000;
-}
-
-.pagination__item_current:hover,
-.pagination__item_current:focus {
     background-color: #fff;
-}
-
-.pagination__item_current:hover .pagination__link,
-.pagination__item_current:focus .pagination__link {
     color: #000;
 }
 
