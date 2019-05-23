@@ -200,9 +200,100 @@
                 Сливочное
             </li>
         </ul>
-        <section class="filters">
+        <section class="page-filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <form action="https://echo.htmlacademy.ru" method="post" class="filters">
+                <fieldset class="filters__item sort">
+                    <legend class="sort__title">
+                        Сортировка
+                    </legend>
+                    <select name="sort" id="sort" class="filters__sort">
+                        <option class="sorting__item">
+                            по популярности
+                        </option>
+                        <option class="sorting__item">
+                            сначала недорогие
+                        </option>
+                        <option class="sorting__item">
+                            сначала дорогие
+                        </option>
+                        <option class="sorting__item">
+                            по жирности
+                        </option>
+                    </select>
+                </fieldset>
+                <label for="price">
+                    Цена: 100 руб. – 500 руб.
+                </label>
+                <input type="range" name="price" id="price" min="100" max="500">
+                <fieldset class="filters__item choice">
+                    <legend class="choice__title">
+                        Жирность:
+                    </legend>
+                    <div class="choice__wrap">
+                        <label class="choice__label">
+                        <input class="choice__item" name="fat" type="radio">
+                            0%
+                        </label>
+                    </div>
+                    <div class="choice__wrap">
+                        <label class="choice__label">
+                            <input class="choice__item" name="fat" type="radio" checked>
+                            до 10%
+                        </label>
+                    </div>
+                    <div class="choice__wrap">
+                        <label class="choice__label">
+                            <input class="choice__item" name="fat" type="radio">
+                            до 30%
+                        </label>
+                    </div>
+                    <div class="choice__wrap">
+                        <label class="choice__label">
+                            <input class="choice__item" name="fat" type="radio">
+                            выше 30%
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="filters__item toppings">
+                    <legend class="toppings__titlr">
+                        Наполнители:
+                    </legend>
+                    <div class="toppings__wrap">
+                        <label class="toppings__label">
+                        <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
+                            шоколадные
+                        </label>
+                    </div>
+                    <div class="toppings__wrap">
+                        <label class="toppings__label">
+                        <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
+                            сахарные присыпки
+                        </label>
+                    </div>
+                    <div class="toppings__wrap">
+                        <label class="toppings__label">
+                        <input class="toppings__checkbox" name="toppings" type="checkbox">
+                            фрукты
+                        </label>
+                    </div>
+                    <div class="toppings__wrap">
+                        <label class="toppings__label">
+                        <input class="toppings__checkbox" name="toppings" type="checkbox">
+                            сиропы
+                        </label>
+                    </div>
+                    <div class="toppings__wrap">
+                        <label class="toppings__label">
+                        <input class="toppings__checkbox" name="toppings" type="checkbox">
+                            джемы
+                        </label>
+                    </div>
+                </fieldset>
+                <button class="filters__btn" type="submit">
+                    Применить
+                </button>
+            </form>
         </section>
         <section class="products-catalog">
             <h2 class="visually-hidden">
