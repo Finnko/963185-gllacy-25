@@ -69,7 +69,6 @@ a:focus {
 }
 
 .dropdown,
-.search__form,
 .user-login__box,
 .callback-form,
 .cart__box {
@@ -175,6 +174,55 @@ a:focus {
     height: 33px;
     background-color: rgba(255,255,255, 0.2);
     border-radius: 50%;
+}
+
+.search {
+    position: relative;
+}
+
+.search:hover .search__form {
+    display: block;
+}
+
+.search__form {
+    position: absolute;
+    left: 15px;
+    top: 33px; /*потом откорректирую*/
+    display: none;
+    width: 341px;
+    padding: 20px 15px;
+    border-radius: 6px;
+    background-color: #f8f7f4;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search__input {
+    width: 100%;
+    padding: 12px 14px 13px;
+    border: 1px solid #d3d3d2;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.search__input:hover {
+    border: 1px solid #c7c6c5;
+    box-shadow: 0 0 0 1px #c7c6c5;
+}
+
+.search__input:focus {
+    outline: none;
+    border: 1px solid #8fbdec;
+    box-shadow: 0 0 0 1px #8fbdec;
+}
+
+.search__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
 }
 
 .user-login__link,
