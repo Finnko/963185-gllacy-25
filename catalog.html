@@ -12,166 +12,168 @@
 <body>
 <div class="container">
     <header class="header">
-        <a href="index.html">
-            <img src="img/logo-gllacy.svg" alt="Логотип Gllacy">
-        </a>
-        <nav class="header__navigation">
-            <ul class="menu">
-                <li class="menu__item menu__item_current">
-                    <a href="catalog.html" class="menu__link">
-                        Каталог
-                        <ul class="menu__dropdown-list dropdown">
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">
-                                    Новинки
-                                </a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a class="dropdown__link dropdown__link_current">
-                                    Сливочное
-                                </a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">
-                                    Щербеты
-                                </a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">
-                                    Фруктовый лед
-                                </a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">
-                                    Мелорин
-                                </a>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        Доставка и оплата
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        О Компании
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="header__user-nav user-navigation">
-            <li class="user-navigation__item search">
-                <a href="#" class="search__link">
-                    <!--<img src="img/search.svg" alt="Иконка поиска">-->
-                </a>
-                <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
-                    <input type="text" name="search" class="search__input" placeholder="Что ищем?">
-                </form>
-            </li>
-            <li class="user-navigation__item user-login">
-                <ul class="user-login__list">
-                    <li class="user-login__item">
-                        <a href="#" class="user-login__link">
-                            <!--<img src="img/login.svg" alt="Иконка входа">-->
-                            Вход
-                        </a>
-                        <div class="user-login__box">
-                            <form action="https://echo.htmlacademy.ru" method="post" class="user-login__form">
-                                <input type="email" name="e-mail" class="user-login__input" placeholder="Электронная почта">
-                                <input type="password" name="password" class="user-login__input" placeholder="Пароль">
-                                <button type="submit" class="user-login__btn btn">
-                                    Войти
-                                </button>
-                            </form>
-                            <ul class="user-login__list-help user-help">
-                                <li class="user-help__item">
-                                    <a href="#" class="user-help__link">
-                                        Забыли пароль?
+        <div class="header__wrap">
+            <a href="index.html">
+                <img src="img/logo-gllacy.svg" alt="Логотип Gllacy" class="header__logo">
+            </a>
+            <nav class="header__navigation">
+                <ul class="menu">
+                    <li class="menu__item menu__item_current">
+                        <a href="catalog.html" class="menu__link">
+                            Каталог
+                            <ul class="menu__dropdown-list dropdown">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Новинки
                                     </a>
                                 </li>
-                                <li class="user-help__item">
-                                    <a href="#" class="user-help__link">
-                                        Новая регистрация
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link dropdown__link_current">
+                                        Сливочное
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Щербеты
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Фруктовый лед
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Мелорин
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            О Компании
+                        </a>
                     </li>
                 </ul>
-            </li>
-            <li class="user-navigation__item cart">
-                <a href="#" class="cart__link">
-                    <!--<img src="img/cart-with-goods.svg" alt="Иконка корзины с товарами">-->
-                    2 товара
-                </a>
-                <div class="cart__box">
-                    <form action="https://echo.htmlacademy.ru" method="post" class="cart__form">
-                        <table class="cart__table">
-                            <tr class="cart__row">
-                                <td class="cart__col">
-                                    <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
-                                        <img src="img/%20x-big.svg" width="10" height="10" alt="">
+            </nav>
+            <ul class="header__user-nav user-navigation">
+                <li class="user-navigation__item search">
+                    <a href="#" class="search__link">
+                        <!--<img src="img/search.svg" alt="Иконка поиска">-->
+                    </a>
+                    <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
+                        <input type="text" name="search" class="search__input" placeholder="Что ищем?">
+                    </form>
+                </li>
+                <li class="user-navigation__item user-login">
+                    <ul class="user-login__list">
+                        <li class="user-login__item">
+                            <a href="#" class="user-login__link">
+                                <!--<img src="img/login.svg" alt="Иконка входа">-->
+                                Вход
+                            </a>
+                            <div class="user-login__box">
+                                <form action="https://echo.htmlacademy.ru" method="post" class="user-login__form">
+                                    <input type="email" name="e-mail" class="user-login__input" placeholder="Электронная почта">
+                                    <input type="password" name="password" class="user-login__input" placeholder="Пароль">
+                                    <button type="submit" class="user-login__btn btn">
+                                        Войти
                                     </button>
-                                </td>
-                                <td class="cart__col">
-                                    <img src="img/cart-item01.png" class="cart__img" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                                </td>
-                                <td class="cart__col">
-                                    Пломбир с апельсиновым джемом
-                                </td>
-                                <td class="cart__col">
+                                </form>
+                                <ul class="user-login__list-help user-help">
+                                    <li class="user-help__item">
+                                        <a href="#" class="user-help__link">
+                                            Забыли пароль?
+                                        </a>
+                                    </li>
+                                    <li class="user-help__item">
+                                        <a href="#" class="user-help__link">
+                                            Новая регистрация
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="user-navigation__item cart">
+                    <a href="#" class="cart__link">
+                        <!--<img src="img/cart-with-goods.svg" alt="Иконка корзины с товарами">-->
+                        2 товара
+                    </a>
+                    <div class="cart__box">
+                        <form action="https://echo.htmlacademy.ru" method="post" class="cart__form">
+                            <table class="cart__table">
+                                <tr class="cart__row">
+                                    <td class="cart__col">
+                                        <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
+                                            <img src="img/%20x-big.svg" width="10" height="10" alt="">
+                                        </button>
+                                    </td>
+                                    <td class="cart__col">
+                                        <img src="img/cart-item01.png" class="cart__img" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                                    </td>
+                                    <td class="cart__col">
+                                        Пломбир с апельсиновым джемом
+                                    </td>
+                                    <td class="cart__col">
                                     <span class="cart__text">
                                         1,5 кг х
                                     </span>
-                                    <span class="cart__text">
+                                        <span class="cart__text">
                                         200 руб.
                                     </span>
-                                </td>
-                                <td class="cart__col">
-                                    300 руб.
-                                </td>
-                            </tr>
-                            <tr class="cart__row">
-                                <td class="cart__col">
-                                    <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
-                                        <img src="img/%20x-big.svg" width="10" height="10" alt="">
-                                    </button>
-                                </td>
-                                <td class="cart__col">
-                                    <img src="img/cart-item02.png" class="cart__img" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                                </td>
-                                <td class="cart__col">
-                                    Клубничный пломбир с присыпкой из белого шоколада
-                                </td>
-                                <td class="cart__col">
+                                    </td>
+                                    <td class="cart__col">
+                                        300 руб.
+                                    </td>
+                                </tr>
+                                <tr class="cart__row">
+                                    <td class="cart__col">
+                                        <button type="button" class="cart__btn-remove" aria-label="Убрать товар из корзины">
+                                            <img src="img/%20x-big.svg" width="10" height="10" alt="">
+                                        </button>
+                                    </td>
+                                    <td class="cart__col">
+                                        <img src="img/cart-item02.png" class="cart__img" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                                    </td>
+                                    <td class="cart__col">
+                                        Клубничный пломбир с присыпкой из белого шоколада
+                                    </td>
+                                    <td class="cart__col">
                                     <span class="cart__text">
                                         1,5 кг х
                                     </span>
-                                    <span class="cart__text">
+                                        <span class="cart__text">
                                         300 руб.
                                     </span>
-                                </td>
-                                <td class="cart__col">
-                                    450 руб.
-                                </td>
-                            </tr>
-                            <tr class="cart__row">
-                                <td colspan="5">
-                                    <b>
-                                        Итого: 750 руб.
-                                    </b>
-                                </td>
-                            </tr>
-                        </table>
-                        <button type="submit" class="cart__btn btn">
-                            Оформить заказ
-                        </button>
-                    </form>
-                </div>
-            </li>
-        </ul>
+                                    </td>
+                                    <td class="cart__col">
+                                        450 руб.
+                                    </td>
+                                </tr>
+                                <tr class="cart__row">
+                                    <td colspan="5">
+                                        <b>
+                                            Итого: 750 руб.
+                                        </b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="submit" class="cart__btn btn">
+                                Оформить заказ
+                            </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div class="header__contacts">
             <p class="header__contacts-text">
                 С 10 до 20, ежедневно
@@ -182,9 +184,6 @@
         </div>
     </header>
     <main class="main">
-        <h1 class="main__title">
-            Сливочное мороженое
-        </h1>
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="index.html" class="breadcrumbs__link">
@@ -200,6 +199,9 @@
                 Сливочное
             </li>
         </ul>
+        <h1 class="main__title">
+            Сливочное мороженое
+        </h1>
         <section class="page-filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form action="https://echo.htmlacademy.ru" method="post" class="filters">
@@ -230,66 +232,70 @@
                     <legend class="choice__title">
                         Жирность:
                     </legend>
-                    <div class="choice__wrap">
-                        <label class="choice__label">
-                        <input class="choice__item" name="fat" type="radio">
-                            0%
-                        </label>
-                    </div>
-                    <div class="choice__wrap">
-                        <label class="choice__label">
-                            <input class="choice__item" name="fat" type="radio" checked>
-                            до 10%
-                        </label>
-                    </div>
-                    <div class="choice__wrap">
-                        <label class="choice__label">
-                            <input class="choice__item" name="fat" type="radio">
-                            до 30%
-                        </label>
-                    </div>
-                    <div class="choice__wrap">
-                        <label class="choice__label">
-                            <input class="choice__item" name="fat" type="radio">
-                            выше 30%
-                        </label>
+                    <div class="choice__box">
+                        <div class="choice__wrap">
+                            <label class="choice__label">
+                                <input class="choice__item" name="fat" type="radio">
+                                0%
+                            </label>
+                        </div>
+                        <div class="choice__wrap">
+                            <label class="choice__label">
+                                <input class="choice__item" name="fat" type="radio" checked>
+                                до 10%
+                            </label>
+                        </div>
+                        <div class="choice__wrap">
+                            <label class="choice__label">
+                                <input class="choice__item" name="fat" type="radio">
+                                до 30%
+                            </label>
+                        </div>
+                        <div class="choice__wrap">
+                            <label class="choice__label">
+                                <input class="choice__item" name="fat" type="radio">
+                                выше 30%
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset class="filters__item toppings">
-                    <legend class="toppings__titlr">
-                        Наполнители:
-                    </legend>
-                    <div class="toppings__wrap">
-                        <label class="toppings__label">
-                        <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
-                            шоколадные
-                        </label>
-                    </div>
-                    <div class="toppings__wrap">
-                        <label class="toppings__label">
-                        <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
-                            сахарные присыпки
-                        </label>
-                    </div>
-                    <div class="toppings__wrap">
-                        <label class="toppings__label">
-                        <input class="toppings__checkbox" name="toppings" type="checkbox">
-                            фрукты
-                        </label>
-                    </div>
-                    <div class="toppings__wrap">
-                        <label class="toppings__label">
-                        <input class="toppings__checkbox" name="toppings" type="checkbox">
-                            сиропы
-                        </label>
-                    </div>
-                    <div class="toppings__wrap">
-                        <label class="toppings__label">
-                        <input class="toppings__checkbox" name="toppings" type="checkbox">
-                            джемы
-                        </label>
-                    </div>
-                </fieldset>
+                        <legend class="toppings__title">
+                            Наполнители:
+                        </legend>
+                        <div class="toppings__box">
+                            <div class="toppings__wrap">
+                                <label class="toppings__label">
+                                    <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
+                                    шоколадные
+                                </label>
+                            </div>
+                            <div class="toppings__wrap">
+                                <label class="toppings__label">
+                                    <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
+                                    сахарные присыпки
+                                </label>
+                            </div>
+                            <div class="toppings__wrap">
+                                <label class="toppings__label">
+                                    <input class="toppings__checkbox" name="toppings" type="checkbox">
+                                    фрукты
+                                </label>
+                            </div>
+                            <div class="toppings__wrap">
+                                <label class="toppings__label">
+                                    <input class="toppings__checkbox" name="toppings" type="checkbox">
+                                    сиропы
+                                </label>
+                            </div>
+                            <div class="toppings__wrap">
+                                <label class="toppings__label">
+                                    <input class="toppings__checkbox" name="toppings" type="checkbox">
+                                    джемы
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
                 <button class="filters__btn" type="submit">
                     Применить
                 </button>
@@ -512,22 +518,22 @@
         <ul class="footer__social social">
             <li class="social__item">
                 <a href="http://twitter.com/id1" class="social__link" target="_blank" aria-label="Ссылка на твиттер магазина Глейси">
-                    <img src="img/twitter.svg" alt="">
+                    <!--<img src="img/twitter.svg" alt="">-->
                 </a>
             </li>
             <li class="social__item">
                 <a href="http://instagram.com/id1" class="social__link" target="_blank" aria-label="Ссылка на инстаграмм магазина Глейси">
-                    <img src="img/insta.svg" alt="">
+                    <!--<img src="img/insta.svg" alt="">-->
                 </a>
             </li>
             <li class="social__item">
                 <a href="http://facebook.com/id1" class="social__link" target="_blank" aria-label="Ссылка на фейсбук магазина Глейси">
-                    <img src="img/facebook.svg" alt="">
+                    <!--<img src="img/facebook.svg" alt="">-->
                 </a>
             </li>
             <li class="social__item">
                 <a href="http://vk.com/id1" class="social__link" target="_blank" aria-label="Ссылка на вконтакте магазина Глейси">
-                    <img src="img/vk.svg" alt="">
+                    <!--<img src="img/vk.svg" alt="">-->
                 </a>
             </li>
         </ul>
