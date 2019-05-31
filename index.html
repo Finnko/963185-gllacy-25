@@ -20,39 +20,39 @@
                 <img src="img/logo-gllacy.svg" alt="Логотип Gllacy" class="header__logo">
                 <nav class="header__navigation">
                     <ul class="menu">
-                        <li class="menu__item">
+                        <li class="menu__item menu__item_active">
                             <a href="catalog.html" class="menu__link">
                                 Каталог
-                                <ul class="menu__dropdown-list dropdown">
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            <b>
-                                                Новинки
-                                            </b>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Сливочное
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Щербеты
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Фруктовый лед
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Мелорин
-                                        </a>
-                                    </li>
-                                </ul>
                             </a>
+                            <ul class="menu__dropdown-list dropdown">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link dropdown__link_new">
+                                        <b>
+                                            Новинки
+                                        </b>
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Сливочное
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link dropdown__link_current">
+                                        Щербеты
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Фруктовый лед
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Мелорин
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link">
@@ -69,7 +69,7 @@
                 <ul class="header__user-nav user-navigation">
                     <li class="user-navigation__item search">
                         <a href="#" class="search__link">
-                            <!--<img src="img/search.svg" alt="Иконка поиска">-->
+
                         </a>
                         <form action="https://echo.htmlacademy.ru" method="post" class="search__form">
                             <input type="text" name="search" class="search__input" placeholder="Что ищем?">
@@ -79,29 +79,30 @@
                         <ul class="user-login__list">
                             <li class="user-login__item">
                                 <a href="#" class="user-login__link">
-                                    <!--<img src="img/login.svg" alt="Иконка входа">-->
                                     Вход
                                 </a>
                                 <div class="user-login__box">
                                     <form action="https://echo.htmlacademy.ru" method="post" class="user-login__form">
                                         <input type="email" name="e-mail" class="user-login__input" placeholder="Электронная почта">
                                         <input type="password" name="password" class="user-login__input" placeholder="Пароль">
-                                        <button type="submit" class="user-login__btn btn">
-                                            Войти
-                                        </button>
+                                        <div class="user-login__wrap">
+                                            <button type="submit" class="user-login__btn btn">
+                                                Войти
+                                            </button>
+                                            <ul class="user-login__list-help user-help">
+                                                <li class="user-help__item">
+                                                    <a href="#" class="user-help__link">
+                                                        Забыли пароль?
+                                                    </a>
+                                                </li>
+                                                <li class="user-help__item">
+                                                    <a href="#" class="user-help__link">
+                                                        Новая регистрация
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </form>
-                                    <ul class="user-login__list-help user-help">
-                                        <li class="user-help__item">
-                                            <a href="#" class="user-help__link">
-                                                Забыли пароль?
-                                            </a>
-                                        </li>
-                                        <li class="user-help__item">
-                                            <a href="#" class="user-help__link">
-                                                Новая регистрация
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </li>
                         </ul>
@@ -165,9 +166,6 @@
                         </a>
                     </li>
                 </ul>
-            </section>
-            <section class="main-offer">
-                <!--Здесь будет слайдер-->
             </section>
             <section class="actions-list">
                 <h2 class="visually-hidden">
