@@ -16,7 +16,34 @@ body {
     line-height: 22px;
     font-weight: 700;
     color: #323232;
-    background-color: #849d8f;
+}
+
+.site-wrapper {
+
+    background-image: url("../img/main-slide01.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper-inner {
+    min-width: 940px;
+    background: #849d8f;
+}
+
+
+.site-wrapper::before,
+.site-wrapper::after {
+    content: "";
+    visibility: hidden;
+}
+
+.site-wrapper::before {
+    background-image: url("../img/main-slide02.png");
+}
+
+.site-wrapper::after {
+    background-image: url("../img/main-slide03.png");
 }
 
 .container {
@@ -40,17 +67,19 @@ a:focus {
     color: #ffbc9e;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
-    padding: 0;
-    border: 0;
-    margin: -1px;
-    height: 1px;
     width: 1px;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .menu,
@@ -58,6 +87,7 @@ a:focus {
 .user-navigation,
 .user-login__list,
 .user-help,
+.slider__list,
 .actions,
 .products,
 .about-company__list,
@@ -70,7 +100,6 @@ a:focus {
     padding: 0;
 }
 
-.dropdown,
 .user-login__box,
 .callback-form,
 .cart__box {
@@ -89,14 +118,15 @@ a:focus {
     text-decoration: none;
     border-radius: 50px;
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-    background-image: linear-gradient(to top, #e74a35, #f26843);
+    background: #f26843;
+    background: linear-gradient(to top, #e74a35, #f26843);
 }
 
 .btn:hover,
 .btn:focus {
     color: #fff;
-    background-image: linear-gradient(rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    box-shadow: 0 2px 2px 0 #ac1000;
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:active {
@@ -263,6 +293,80 @@ a:focus {
     background-color: #fff;
 }
 
+.slider {
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 321px;
+    text-align: center;
+    color: #fff;
+}
+
+.slider__item {
+    display: none;
+}
+
+.slider__title {
+    width: 700px;
+    margin: 0 auto 27px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.slider__btn {
+    padding: 14px 44px;
+    font-size: 32px;
+    line-height: 44px;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.slider__controls {
+    position: absolute;
+    bottom: 63px;
+    left: 0;
+    z-index: 20;
+    font-size: 0;
+}
+
+.slider__controls label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    vertical-align: top;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#product-1:checked ~ .site-wrapper {
+    background-color: #849d8f;
+    background-image: url("../img/main-slide01.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+    background-color: #8996a6;
+    background-image: url("../img/main-slide02.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+    background-color: #9d8b84;
+    background-image: url("../img/main-slide03.png");
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+    display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+    background-color: #ffffff;
+}
+
 .actions-list {
     margin-bottom: 40px;
 }
@@ -277,6 +381,7 @@ a:focus {
 
 .actions__item {
     width: 560px;
+    padding: 20px;
     border-radius: 12px;
 }
 
@@ -314,6 +419,11 @@ a:focus {
 
 .products__item:not(:last-child) {
     margin-right: 26px;
+}
+
+.products__title {
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .products__price {
