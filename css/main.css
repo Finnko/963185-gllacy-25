@@ -787,9 +787,6 @@ input[type="radio"].visually-hidden {
 
 .other {
     margin-bottom: 40px;
-}
-
-.other__wrap {
     display: flex;
     justify-content: space-between;
 }
