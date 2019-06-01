@@ -255,6 +255,8 @@ input[type="radio"].visually-hidden {
 }
 
 .header__contacts-text {
+    margin: 0;
+    margin-bottom: 5px;
     font-size: 14px;
     line-height: 16px;
     color: #fff;
@@ -479,6 +481,10 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
+.slider__controls label:hover {
+    background-color: rgba(255,255,255, 0.4);
+}
+
 #product-1:checked ~ .site-wrapper {
     background-color: #849d8f;
     background-image: url("../img/main-slide01.png");
@@ -520,8 +526,9 @@ input[type="radio"].visually-hidden {
 
 .actions__item {
     width: 560px;
-    padding: 20px;
+    padding: 19px 21px 23px 20px;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .actions__item:first-child {
@@ -533,12 +540,19 @@ input[type="radio"].visually-hidden {
 }
 
 .actions__title {
+    margin: 0;
+    margin-bottom: 15px;
     font-size: 35px;
     line-height: 41px;
 }
 
+.actions__text {
+    margin: 0;
+    margin-bottom: 45px;
+}
+
 .actions__btn {
-    text-align: right;
+
 }
 
 .our-products {
@@ -551,18 +565,45 @@ input[type="radio"].visually-hidden {
 }
 
 .products__item {
+    position: relative;
     width: 267px;
     text-align: center;
     color: #fff;
+}
+
+.products__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 61px;
+    height: 61px;
+    border-radius: 50px;
+    background: #fff url("../img/hit.svg") no-repeat center center;
 }
 
 .products__item:not(:last-child) {
     margin-right: 26px;
 }
 
+.product__wrap-img {
+    width: 266px;
+    height: 266px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .products__title {
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+}
+
+.product__price-box {
+    position: absolute;
+    left: 0;
+    bottom: 75px;
 }
 
 .products__price {
@@ -577,6 +618,10 @@ input[type="radio"].visually-hidden {
 
 .about-company {
     margin-bottom: 40px;
+    padding: 23px 33px 3px 20px;
+    border-radius: 12px;
+    background: #f1e6d0 url("../img/about-company-bg.jpg") repeat left center;
+    overflow: hidden;
 }
 
 .about-company__list {
@@ -586,16 +631,47 @@ input[type="radio"].visually-hidden {
 }
 
 .about-company__item {
+    position: relative;
     width: 543px;
 }
 
+.about-company__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 49px;
+    height: 49px;
+}
+
+.about-company__item:first-child::before {
+    background-image: url("../img/about-icon01.svg");
+}
+
+.about-company__item:nth-child(2)::before {
+    background-image: url("../img/about-icon03.svg");
+}
+
+.about-company__item:nth-child(3)::before {
+    background-image: url("../img/about-icon03.svg");
+}
+
+.about-company__item:last-child::before {
+    background-image: url("../img/about-icon04.svg");
+}
+
 .about-company__title {
+    margin: 0;
+    margin-bottom: 20px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
 }
 
 .about-company__text {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 56px;
     font-weight: 400;
 }
 
@@ -611,17 +687,23 @@ input[type="radio"].visually-hidden {
 .latest-news,
 .subscribe {
     width: 560px;
+    border-radius: 15px;
 }
 
 .latest-news {
+    padding: 20px 0 79px 19px;
     background: #fff url("../img/strawberry-bg.jpg") no-repeat center center / cover;
 }
 
 .latest-news__text {
+    margin: 0;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
 .latest-news__link {
+    display: block;
+    max-width: 279px;
     font-size: 24px;
     line-height: 30px;
     color: #323232;
@@ -634,43 +716,96 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe {
+    padding: 25px 22px 35px 21px;
     background-color: #f8f7f4;
 }
 
+.subscribe__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .subscribe__input {
+    width: 367px;
+    padding: 12px 14px 13px;
+    border: 1px solid #d3d3d2;
     font: inherit;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+    color: #323232;
+}
+
+.subscribe__input:hover {
+    border: 1px solid #c7c6c5;
+    box-shadow: 0 0 0 1px #c7c6c5;
+}
+
+.subscribe__input:focus {
+    outline: none;
+    border: 1px solid #8fbdec;
+    box-shadow: 0 0 0 1px #8fbdec;
+}
+
+.search__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
     color: #999999;
 }
 
 .subscribe__text {
+    margin: 0;
+    margin-bottom: 35px;
     font-weight: 400;
     color: #5a5a5a;
 }
 
+.subscribe__btn {
+    padding: 13px 19px;
+}
+
 .map {
     position: relative;
+    min-height: 430px;
 }
 
 .contacts {
     position: absolute;
-    top: 20%;
-    right: 5%;
+    top: 23px;
+    right: 0;
+    width: 302px;
+    padding: 27px 25px 31px;
     font-size: 14px;
     line-height: 20px;
+    border-radius: 15px;
     background-color: #fff;
 }
 
-.contacts {
-    width: 302px;
-    border-radius: 10px;
+.contacts__text {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.contacts__text:last-of-type {
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 .contacts__address,
 .contacts__phone {
     font-size: 18px;
     line-height: 24px;
+}
+
+.contacts__address {
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .contacts__phone {
@@ -682,6 +817,11 @@ input[type="radio"].visually-hidden {
 .contacts__phone:active,
 .contacts__phone:focus {
     color: #e84d37;
+}
+
+.contacts__btn {
+    display: block;
+    text-align: center;
 }
 
 .footer {
@@ -703,13 +843,31 @@ input[type="radio"].visually-hidden {
 }
 
 .info-list__item {
+    position: relative;
     width: 165px;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
 }
 
+.info-list__item::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    width: 15px;
+    height: 13px;
+    background-image: url("../img/heart.svg");
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.info-list__item:hover:before {
+    opacity: 1;
+}
+
 .footer__copyright-text {
+    margin: 0;
     font-size: 12px;
     line-height: 18px;
     color: #fefefe;
