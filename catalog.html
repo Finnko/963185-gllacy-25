@@ -19,37 +19,37 @@
                 </a>
                 <nav class="header__navigation">
                     <ul class="menu">
-                        <li class="menu__item menu__item_current">
+                        <li class="menu__item menu__item_current menu__item_active">
                             <a href="catalog.html" class="menu__link">
                                 Каталог
-                                <ul class="menu__dropdown-list dropdown">
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Новинки
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link dropdown__link_current">
-                                            Сливочное
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Щербеты
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Фруктовый лед
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">
-                                            Мелорин
-                                        </a>
-                                    </li>
-                                </ul>
                             </a>
+                            <ul class="menu__dropdown-list dropdown">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Новинки
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link dropdown__link_current">
+                                        Сливочное
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Щербеты
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Фруктовый лед
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">
+                                        Мелорин
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link">
@@ -313,7 +313,7 @@
                 <h2 class="visually-hidden">
                     Наши товары
                 </h2>
-                <ul class="products">
+                <ul class="products products-inner">
                     <li class="products__item">
                         <div class="product__wrap-img">
                             <img src="img/ice-cream01.jpg" class="products__img" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -331,6 +331,11 @@
                                 Сливочное с апельсиновым джемом и цитрусовой стружкой
                             </a>
                         </h3>
+                        <div class="products__overlay">
+                            <a href="#" class="products__btn btn">
+                                Быстрый просмотр
+                            </a>
+                        </div>
                     </li>
                     <li class="products__item">
                         <div class="product__wrap-img">
@@ -626,21 +631,5 @@
         </footer>
     </div>
 </div>
-<section class="callback-form">
-    <form action="https://echo.htmlacademy.ru" method="post" class="callback">
-        <h3 class="callback__title">
-            Мы обязательно вам ответим!
-        </h3>
-        <button type="button" class="callback__close" aria-label="Кнопка закрыть окно">
-            <img src="img/%20x-big.svg" alt="">
-        </button>
-        <input type="text" name="name" class="callback__input" placeholder="Как вас зовут?">
-        <input type="email" name="e-mail" class="callback__input" placeholder="Ваша почта для ответа?">
-        <textarea name="message" class="callback__textarea" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="callback__btn btn" type="submit">
-            Отправить
-        </button>
-    </form>
-</section>
 </body>
 </html>

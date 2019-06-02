@@ -798,7 +798,7 @@ input[type="radio"].visually-hidden {
 }
 
 .latest-news {
-    padding: 20px 0 79px 19px;
+    padding: 20px 20px 79px 19px;
     background: #fff url("../img/strawberry-bg.jpg") no-repeat center center / cover;
 }
 
@@ -877,12 +877,13 @@ input[type="radio"].visually-hidden {
 .map {
     position: relative;
     min-height: 430px;
+    background: url("../img/map.jpg") no-repeat center center / contain;
 }
 
 .contacts {
     position: absolute;
-    top: 23px;
-    right: 0;
+    top: 55px;
+    right: 70px;
     width: 302px;
     padding: 27px 25px 31px;
     font-size: 14px;
@@ -984,7 +985,7 @@ input[type="radio"].visually-hidden {
     width: 165px;
 }
 
-.info-list__item::before {
+.info-list__item:first-child::before {
     content: '';
     position: absolute;
     left: -20px;
@@ -992,24 +993,16 @@ input[type="radio"].visually-hidden {
     width: 15px;
     height: 13px;
     background-image: url("../img/heart.svg");
-    opacity: 0;
-    transition: opacity .3s;
 }
 
-.info-list__item:hover:before {
-    opacity: 1;
+.info-list__item:first-child .info-list__link {
+    font-weight: bold;
 }
 
 .info-list__link {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
-}
-
-.info-list__link:hover,
-.info-list__link:focus {
-    color: #fff;
-    font-weight: bold;
 }
 
 .footer__copyright-text {
@@ -1096,20 +1089,50 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid rgba(255, 255, 255, 0.32);
 }
 
-.products-catalog .products {
+.products-inner {
     margin-bottom: 43px;
 }
 
-.products-catalog .products__item {
+.products-inner .products__item {
     margin-bottom: 29px;
 }
 
-.products-catalog .products__item::before {
+.products-inner .products__item::before {
     content: none;
 }
 
-.products-catalog .products__item:nth-child(4n) {
+.products-inner .products__item:nth-child(4n) {
     margin-right: 0;
+}
+
+.products-inner .products__item {
+    position: relative;
+}
+
+.products__overlay {
+    position: absolute;
+    left: -13px;
+    top: -6px;
+    z-index: 1;
+    width: 293px;
+    height: 405px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 22px 45px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255, 0.2);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.products__item:hover .products__overlay {
+    opacity: 1;
+}
+
+.products__btn {
+    padding: 11px 17px;
 }
 
 .pagination {
@@ -1154,7 +1177,7 @@ input[type="radio"].visually-hidden {
 
 /*временный стиль*/
 .callback-form {
-    padding: 300px 0;
+    padding: 200px 0;
 }
 
 .callback {
