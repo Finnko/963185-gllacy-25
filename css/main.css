@@ -505,13 +505,18 @@ input[type="radio"].visually-hidden {
     height: 10px;
 }
 
+.cart__form {
+    display: flex;
+    flex-direction: column;
+}
+
 .cart__box {
     position: absolute;
     left: -423px;
     top: 37px;
     width: 540px;
 
-    padding: 20px 13px 20px 20px;
+    padding: 20px 14px 21px 21px;
     border-radius: 5px;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
@@ -519,26 +524,54 @@ input[type="radio"].visually-hidden {
 
 .cart__btn-remove {
     display: block;
+    margin-right: 7px;
     width: 11px;
     height: 11px;
     border: none;
     background: url("../img/x-small.svg") no-repeat center center;
 }
 
-.cart__col, .cart__text {
+.cart__col,
+.cart__text {
+    margin: 0;
+    padding: 0;
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
 }
 
 .cart__img {
+    margin-right: 11px;
     width: 33px;
     height: 33px;
 }
 
 .cart__desc {
     margin: 0;
-    max-width: 215px;
+    margin-right: 32px;
+    width: 218px;
+    vertical-align: bottom;
+}
+
+.cart__text:last-child {
+    color: #999999;
+    margin-right: 29px;
+}
+
+.cart__subtotal {
+    text-align: left;
+}
+
+.cart__total {
+    padding: 15px 0;
+    border-top: 1px solid #cacac7;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+}
+
+.cart__btn {
+    margin-left: auto;
 }
 
 .slider {
@@ -636,7 +669,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     width: 560px;
     padding: 19px 21px 23px 20px;
-    border-radius: 12px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -704,6 +737,8 @@ input[type="radio"].visually-hidden {
 }
 
 .products__title {
+    position: relative;
+    z-index: 3;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -712,7 +747,7 @@ input[type="radio"].visually-hidden {
 .product__price-box {
     position: absolute;
     left: 0;
-    bottom: 75px;
+    top: 215px;
 }
 
 .products__price {
@@ -822,7 +857,13 @@ input[type="radio"].visually-hidden {
     color: #e84d37;
 }
 
+.subscribe-wrap {
+    border-radius: 10px;
+    background: url("../img/subscribe-bg.jpg") no-repeat center center / cover;
+}
+
 .subscribe {
+    margin: 5px;
     padding: 25px 22px 35px 21px;
     background-color: #f8f7f4;
 }
@@ -875,15 +916,19 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-    position: relative;
     min-height: 430px;
     background: url("../img/map.jpg") no-repeat center center / contain;
+}
+
+.map .container {
+    position: relative;
+    min-height: 430px;
 }
 
 .contacts {
     position: absolute;
     top: 55px;
-    right: 70px;
+    right: 30px;
     width: 302px;
     padding: 27px 25px 31px;
     font-size: 14px;
@@ -1115,7 +1160,7 @@ input[type="radio"].visually-hidden {
     top: -6px;
     z-index: 1;
     width: 293px;
-    height: 405px;
+    height: 120%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
