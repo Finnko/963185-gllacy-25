@@ -1449,6 +1449,12 @@ input[type="radio"].visually-hidden {
     transform: rotate(180deg);
 }
 
+.pagination__next:hover .pagination__arrow path,
+.pagination__next:focus .pagination__arrow path,
+.pagination__next:active .pagination__arrow path {
+    fill: #fff;
+}
+
 /*временный стиль*/
 .callback-form {
     padding: 200px 0;
