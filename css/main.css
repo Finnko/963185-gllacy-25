@@ -1425,7 +1425,6 @@ input[type="radio"].visually-hidden {
     border-radius: 50px;
 }
 
-
 .pagination__link:hover,
 .pagination__link:focus {
     color: #fff;
@@ -1437,8 +1436,17 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
 }
 
-.pagination__link_prev img {
-    transform: scaleX(-1);
+.pagination__prev,
+.pagination__next {
+    display: block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 27px;
+}
+
+.pagination__prev {
+    transform: rotate(180deg);
 }
 
 /*временный стиль*/
