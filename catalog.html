@@ -224,50 +224,51 @@
                             Сортировка
                         </legend>
                         <select name="sort" id="sort" class="filters__sort">
-                            <option class="sorting__item">
+                            <option class="sorting__item" value="by-popularity">
                                 по популярности
                             </option>
-                            <option class="sorting__item">
+                            <option class="sorting__item" value="first-cheap">
                                 сначала недорогие
                             </option>
-                            <option class="sorting__item">
+                            <option class="sorting__item" value="first-expensive">
                                 сначала дорогие
                             </option>
-                            <option class="sorting__item">
+                            <option class="sorting__item" value="by-fat">
                                 по жирности
                             </option>
                         </select>
                     </fieldset>
-                    <label for="price">
-                        Цена: 100 руб. – 500 руб.
-                    </label>
-                    <input type="range" name="price" id="price" min="100" max="500">
+                    <fieldset class="filters__item range">
+                        <legend class="range__title">
+                            Цена: 100 руб. – 500 руб.
+                        </legend>
+                    </fieldset>
                     <fieldset class="filters__item choice">
                         <legend class="choice__title">
                             Жирность:
                         </legend>
                         <div class="choice__box">
                             <div class="choice__wrap">
-                                <label class="choice__label">
-                                    <input class="choice__item" name="fat" type="radio">
+                                <input class="choice__item visually-hidden" name="fat" id="fat-01" type="radio">
+                                <label class="choice__label" for="fat-01">
                                     0%
                                 </label>
                             </div>
                             <div class="choice__wrap">
-                                <label class="choice__label">
-                                    <input class="choice__item" name="fat" type="radio" checked>
+                                <input class="choice__item visually-hidden" name="fat" id="fat-02" type="radio" checked>
+                                <label class="choice__label" for="fat-02">
                                     до 10%
                                 </label>
                             </div>
                             <div class="choice__wrap">
-                                <label class="choice__label">
-                                    <input class="choice__item" name="fat" type="radio">
+                                <input class="choice__item visually-hidden" name="fat" id="fat-03" type="radio">
+                                <label class="choice__label" for="fat-03">
                                     до 30%
                                 </label>
                             </div>
                             <div class="choice__wrap">
-                                <label class="choice__label">
-                                    <input class="choice__item" name="fat" type="radio">
+                                <input class="choice__item visually-hidden" name="fat" id="fat-04" type="radio">
+                                <label class="choice__label" for="fat-04">
                                     выше 30%
                                 </label>
                             </div>
@@ -279,36 +280,37 @@
                         </legend>
                         <div class="toppings__box">
                             <div class="toppings__wrap">
-                                <label class="toppings__label">
-                                    <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
+                                <input class="toppings__checkbox visually-hidden" id="topping-1" name="toppings" type="checkbox" checked>
+                                <label class="toppings__label" for="topping-1">
                                     шоколадные
                                 </label>
                             </div>
                             <div class="toppings__wrap">
-                                <label class="toppings__label">
-                                    <input class="toppings__checkbox" name="toppings" type="checkbox" checked>
+                                <input class="toppings__checkbox visually-hidden" id="topping-2" name="toppings" type="checkbox" checked>
+                                <label class="toppings__label" for="topping-2">
                                     сахарные присыпки
                                 </label>
                             </div>
                             <div class="toppings__wrap">
-                                <label class="toppings__label">
-                                    <input class="toppings__checkbox" name="toppings" type="checkbox">
+                                <input class="toppings__checkbox visually-hidden" id="topping-3" name="toppings" type="checkbox">
+                                <label class="toppings__label" for="topping-3">
                                     фрукты
                                 </label>
                             </div>
                             <div class="toppings__wrap">
-                                <label class="toppings__label">
-                                    <input class="toppings__checkbox" name="toppings" type="checkbox">
+                                <input class="toppings__checkbox visually-hidden" id="topping-4" name="toppings" type="checkbox">
+                                <label class="toppings__label" for="topping-4">
                                     сиропы
                                 </label>
                             </div>
                             <div class="toppings__wrap">
-                                <label class="toppings__label">
-                                    <input class="toppings__checkbox" name="toppings" type="checkbox">
+                                <input class="toppings__checkbox visually-hidden" id="topping-5" name="toppings" type="checkbox" disabled>
+                                <label class="toppings__label" for="topping-5">
                                     джемы
                                 </label>
                             </div>
                         </div>
+
                     </fieldset>
                     <button class="filters__btn" type="submit">
                         Применить
