@@ -223,25 +223,37 @@
                         <legend class="sort__title">
                             Сортировка
                         </legend>
-                        <select name="sort" id="sort" class="filters__sort">
-                            <option class="sorting__item" value="by-popularity">
-                                по популярности
-                            </option>
-                            <option class="sorting__item" value="first-cheap">
-                                сначала недорогие
-                            </option>
-                            <option class="sorting__item" value="first-expensive">
-                                сначала дорогие
-                            </option>
-                            <option class="sorting__item" value="by-fat">
-                                по жирности
-                            </option>
-                        </select>
+                        <label for="sort" class="sort__label">
+                            <select name="sort" id="sort" class="sort__select">
+                                <option class="sort__option" value="by-popularity">
+                                    по популярности
+                                </option>
+                                <option class="sort__option" value="first-cheap">
+                                    сначала недорогие
+                                </option>
+                                <option class="sort__option" value="first-expensive">
+                                    сначала дорогие
+                                </option>
+                                <option class="sort__option" value="by-fat">
+                                    по жирности
+                                </option>
+                            </select>
+                            <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <path fill="#fff" d="M5.5 10L0 0h11"></path>
+                            </svg>
+                        </label>
                     </fieldset>
                     <fieldset class="filters__item range">
                         <legend class="range__title">
                             Цена: 100 руб. – 500 руб.
                         </legend>
+                        <div class="range__controls">
+                            <div class="range__scale">
+                                <div class="range__bar" style="margin-left: 10%; width: 60%"></div>
+                            </div>
+                            <div class="range__toggle range__toggle_min"></div>
+                            <div class="range__toggle range__toggle_max"></div>
+                        </div>
                     </fieldset>
                     <fieldset class="filters__item choice">
                         <legend class="choice__title">

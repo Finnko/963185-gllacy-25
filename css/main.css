@@ -512,6 +512,7 @@ input[type="radio"].visually-hidden {
 
 .cart__box {
     position: absolute;
+    z-index: 1;
     left: -423px;
     top: 37px;
     width: 540px;
@@ -1090,7 +1091,7 @@ input[type="radio"].visually-hidden {
 .filters {
     display: flex;
     flex-wrap: wrap;
-    width: 860px;
+    width: 870px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -1099,6 +1100,47 @@ input[type="radio"].visually-hidden {
 
 .sort {
     margin-right: 14px;
+}
+
+.sort__label {
+    position: relative;
+    display: block;
+    margin-right: 14px;
+    margin-bottom: 15px;
+    padding: 10px 17px 9px 16px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 50px;
+}
+
+.sort__select {
+    padding: 0;
+    border: none;
+    width: 165px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    color: #f8f7f4;
+    font-size: 16px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.arrow-down {
+    position: absolute;
+    right: 19px;
+    top: 14px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sort__select:hover + .arrow-down path {
+    fill: #323232;
+}
+.sort__select:hover {
+    color: #323232;
+}
+
+.sort__option {
+    color: #323232;
 }
 
 .filters__item {
@@ -1115,19 +1157,70 @@ input[type="radio"].visually-hidden {
     padding-left: 15px;
 }
 
+.range__controls {
+    position: relative;
+    margin-right: 14px;
+    padding: 0 22px;
+    padding-top: 16.5px;
+    width: 220px;
+    height: 37px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.range__scale {
+    height: 4px;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.range__bar {
+    width: 70%;
+    height: 4px;
+    background-color: #fff;
+}
+
+.range__toggle {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: 9px solid #ffffff;
+    border-radius: 50px;
+    background-color: #ababab;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+.range__toggle:hover {
+    transform: scale(1.1);
+}
+
+.range__toggle_min {
+    left: 36px;
+}
+
+.range__toggle_max {
+    left: 131px;
+}
+
 .choice__box,
 .toppings__box {
     display: flex;
 }
 
 .choice__box {
-    padding: 8px 17px 7px 14px;
+    padding: 10px 17px 9px 14px;
+    min-height: 37px;
     background-color: rgba(255,255,255, 0.2);
     border-radius: 50px;
 }
 
 .toppings__box {
-    padding: 9px 20px 9px 16px;
+    padding: 10px 20px 9px 16px;
+    min-height: 37px;
     margin-right: 13px;
     background-color: rgba(255,255,255, 0.2);
     border-radius: 50px;
@@ -1181,7 +1274,7 @@ input[type="radio"].visually-hidden {
 }
 
 .choice__wrap input[type="radio"]:focus + .choice__label::before {
-    outline: 3px solid #8fbdec;
+    box-shadow: 0 0 0 3px #8fbdec;
 }
 
 .choice__wrap input[type="radio"]:disabled + .choice__label::before {
@@ -1207,17 +1300,23 @@ input[type="radio"].visually-hidden {
 }
 
 .toppings__wrap input[type="checkbox"]:checked + .toppings__label::before {
+    left: -28px;
     background: url('../img/checkbox-on.svg') no-repeat center center / contain;
 }
 
-.toppings__wrap input[type="checkbox"]:checked + .toppings__label::before {
-    outline: 3px solid #8fbdec;
+.toppings__wrap input[type="checkbox"]:focus + .toppings__label::before {
+    box-shadow: 0 0 0 3px #8fbdec;
 }
 
+.toppings__wrap input[type="checkbox"]:disabled + .toppings__label::before {
+    opacity: 0.4;
+}
 
 .filters__btn {
     align-self: flex-end;
-    padding: 7px 29px 6px;
+    padding: 7px 29px;
+    min-height: 37px;
+    border: none;
     border: 2px solid #fff;
     font-size: 16px;
     line-height: 18px;
@@ -1225,6 +1324,8 @@ input[type="radio"].visually-hidden {
     color: #fff;
     border-radius: 50px;
     background-color: rgba(255,255,255, 0.2);
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
 }
 
 .filters__btn:hover,
@@ -1235,8 +1336,8 @@ input[type="radio"].visually-hidden {
 
 .filters__btn:active {
     color: #323232;
-    background-color: #eaeaea;
-    box-shadow: inset 0 2px 1px 0 rgb(105, 105, 105);
+    box-shadow: inset 0 2px 1px 0 #696969;
+    background-color: #ededed;
 }
 
 .products-catalog {
