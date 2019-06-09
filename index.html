@@ -358,7 +358,7 @@
             </section>
         </main>
     </div>
-    <section class="map">
+    <section class="map" id="map">
         <h2 class="visually-hidden">
             Контакты
         </h2>
@@ -379,7 +379,7 @@
                 <p class="contacts__text">
                     С 10 до 20, ежедневно
                 </p>
-                <a href="#" class="contacts__btn btn">
+                <a href="#" class="contacts__btn btn modal-btn">
                     Форма обратной связи
                 </a>
             </div>
@@ -444,19 +444,22 @@
 </div>
 <section class="callback-form">
     <form action="https://echo.htmlacademy.ru" method="post" class="callback">
-      <h3 class="callback__title">
-          Мы обязательно вам ответим!
-      </h3>
-      <button type="button" class="callback__close" aria-label="Кнопка закрыть окно">
-          <img src="img/%20x-big.svg" alt="">
-      </button>
-      <input type="text" name="name" class="callback__input" placeholder="Как вас зовут?">
-      <input type="email" name="e-mail" class="callback__input" placeholder="Ваша почта для ответа?">
-      <textarea name="message" class="callback__textarea" placeholder="Напишите что-нибудь..."></textarea>
-      <button class="callback__btn btn" type="submit">
-          Отправить
-      </button>
+        <h3 class="callback__title">
+            Мы обязательно вам ответим!
+        </h3>
+        <button type="button" class="callback__close" aria-label="Кнопка закрыть окно">
+            <img src="img/%20x-big.svg" alt="">
+        </button>
+        <input type="text" name="login" class="callback__input" placeholder="Как вас зовут?" required>
+        <input type="email" name="email" class="callback__input" placeholder="Ваша почта для ответа?" required>
+        <textarea name="message" class="callback__textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="callback__btn btn" type="submit">
+            Отправить
+        </button>
     </form>
 </section>
+<div class="overlay"></div>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=<d83631bc-eb29-4a12-a3c6-1f32c30f1621>&lang=ru_RU"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
