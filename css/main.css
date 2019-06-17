@@ -489,7 +489,7 @@ input[type='radio'].visually-hidden {
 .user-login__input {
     width: 100%;
     margin-bottom: 20px;
-    padding: 12px 14px 13px;
+    padding: 13px 14px;
     border: 1px solid #d3d3d2;
     font-weight: 400;
     font-size: 14px;
@@ -996,6 +996,7 @@ input[type='radio'].visually-hidden {
 }
 
 .subscribe-wrap {
+    min-height: 220px;
     background: #f8f7f4 url('../img/subscribe-bg.jpg') no-repeat center center / cover;
 }
 
@@ -1084,7 +1085,7 @@ input[type='radio'].visually-hidden {
 
 .map {
     min-height: 430px;
-    background: url('../img/map.jpg') no-repeat center center / contain;
+    background: #f7f1d9 url('../img/map.jpg') no-repeat center center / contain;
 }
 
 .map .container {
@@ -1328,6 +1329,7 @@ input[type='radio'].visually-hidden {
     width: 165px;
     background-color: transparent;
     -webkit-appearance: none;
+
     color: #f8f7f4;
     font-size: 16px;
     line-height: 18px;
@@ -1752,7 +1754,7 @@ input[type='radio'].visually-hidden {
     width: 100%;
     max-width: 266px;
     margin-bottom: 20px;
-    padding: 12px 14px 13px;
+    padding: 13px 14px;
     border: 1px solid #d3d3d2;
     font-weight: 400;
     font-size: 16px;
