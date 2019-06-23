@@ -599,16 +599,6 @@ input[type='radio'].visually-hidden {
     height: 10px;
 }
 
-.cart__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
 .cart__table {
     border-collapse: collapse;
 }
@@ -689,7 +679,8 @@ input[type='radio'].visually-hidden {
 }
 
 .cart__btn {
-    max-width: 172px;
+    max-width: 176px;
+    display: block;
     margin-left: auto;
     padding: 10px 15px;
 }
