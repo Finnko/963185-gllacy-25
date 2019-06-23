@@ -783,13 +783,6 @@ input[type='radio'].visually-hidden {
 }
 
 .actions__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     width: 560px;
     padding: 17px 21px 25px 20px;
     border-radius: 15px;
@@ -816,9 +809,13 @@ input[type='radio'].visually-hidden {
     margin-bottom: 45px;
 }
 
+.actions__wrap {
+    margin: 0;
+    text-align: right;
+}
+
 .actions__btn {
     max-width: 200px;
-    margin-left: auto;
 }
 
 .our-products {
@@ -1743,8 +1740,11 @@ input[type='radio'].visually-hidden {
 
 .callback__close {
     position: absolute;
-    right: 6px;
-    top: 15px;
+    right: -15px;
+    top: -7px;
+    display: block;
+    width: 32px;
+    height: 32px;
     border: none;
     background-color: transparent;
     cursor: pointer;
