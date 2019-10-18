@@ -61,30 +61,3 @@ window.addEventListener('keydown', function (evt) {
     }
 });
 
-//Создаем карту
-
-ymaps.ready(function () {
-    const myMap = new ymaps.Map('map', {
-            center: [59.939173, 30.329326],
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemarkWithContent = new ymaps.Placemark([59.938621, 30.323200], {
-            hintContent: 'Gllacy - магазин мороженого',
-            balloonContent: 'Самое вкусное мороженое - здесь!'
-        }, {
-            iconLayout: 'default#imageWithContent',
-            iconImageHref: 'img/map-pin.svg',
-            iconImageSize: [80, 140],
-            iconImageOffset: [-40, -140],
-            iconContentLayout: MyIconContentLayout
-        });
-    // myMap.behaviors.disable('scrollZoom');
-    myMap.geoObjects.add(myPlacemarkWithContent);
-});
